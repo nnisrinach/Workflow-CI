@@ -1,0 +1,9 @@
+name: MLProject
+
+entry_points:
+  main:
+    parameters:
+      data_path:
+        type: path
+        default: credit_card_preprocessing.csv
+    command: "python modelling.py {data_path}"
